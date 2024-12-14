@@ -1,6 +1,9 @@
-function App() {
-  return <div className=""></div>
+const Body = () => {
+  return (
+    <div>
+      body
+    </div>
+  )
 }
 
-export default App;
-
+export default Body;
