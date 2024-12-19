@@ -4,7 +4,7 @@ import search from "../../img/search-svgrepo-com.svg"
 
 
 const Header = () => {
-    return <header>
+    return <header className="w-full p-5 ">
             {/* Header left */}
             <div>
                 <img src={menu}alt="menu" />
