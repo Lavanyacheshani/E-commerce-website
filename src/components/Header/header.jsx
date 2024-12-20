@@ -21,7 +21,7 @@ const Header = () => {
                     LavSan <span className="text-white">Store</span>
                 </h1>  
                 <div className=" overflow-hidden ml-2 flex items-center rounded-full bg-[#f1e6e6]">
-                    <input type="text" placeholder="Search" className=" ml-1 outline-none p-2 font-semibold text-sm w-[200px] bg-inherit"/>
+                    <input type="text" placeholder="Search" className=" hidden sm:inline-block  ml-1 outline-none p-2 font-semibold text-sm w-[200px] bg-inherit"/>
                     <IconButton><SearchIcon  sx={{color:"gray"}}/></IconButton>
                 </div>
             </div>
