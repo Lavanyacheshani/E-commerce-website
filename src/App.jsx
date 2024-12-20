@@ -1,17 +1,10 @@
-import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-
+import AppRouter from "./Routers/AppRouter";
 
 
 function App() {
-  return <div className="w-full h-screen">
-    <Header/>
-    <Body/>
-    <Footer/>
-
-
-  </div>
+  return <AppRouter/>
+   
+    
   
 }
 
