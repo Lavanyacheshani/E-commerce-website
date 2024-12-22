@@ -36,7 +36,16 @@ const Header = () => {
                 </div>
             </div>
             {/* Header right */}
-            <IconButton>< ShoppingCartIcon sx={{color:"white"}}/></IconButton>
+            <IconButton>
+                <div className='relative p-1'>
+                < ShoppingCartIcon sx={{color:"white"}}/>
+                <div className='absolute top-[2px] right-0 font-semibold flex items-center w-3 h-3 text-[7px] justify-center text-black bg-white rounded-full'>2</div>
+                </div>
+
+                
+            </IconButton>
+
+
         </header>
     );
 };
