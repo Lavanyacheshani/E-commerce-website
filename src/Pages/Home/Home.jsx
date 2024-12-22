@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <div className="p-5 pt-[100px] w-full h-screen overflow-y-scroll">
       <Ads />
-      <Product title="Trending Products" rowsCount={1} slidesPerView={3} />
-      <Product title="Shoes" rowsCount={1} slidesPerView={3} />
-      <Product title="Watches" rowsCount={1} slidesPerView={3} />
+      <Product title="Trending Products"  />
+      <Product title="Shoes" />
+      <Product title="Watches" />
 
     </div>
   );
