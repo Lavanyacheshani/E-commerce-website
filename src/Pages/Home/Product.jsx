@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { Grid, Mousewheel, Pagination } from 'swiper/modules';
-import { IconButton } from '@mui/material';
+import { IconButton, Rating } from '@mui/material';
 import './style.css'
 
 const productArr = [
@@ -95,6 +95,13 @@ const ProductUnit = ({ ImageUrl, price, productTitle }) => (
         className="w-full object-contain"
       />
       <h3 className="text-sm font-semibold text-stone-950">{productTitle}</h3>
+      <Rating
+        name={ImageUrl}
+        value={3.5}
+        precision={0.1}
+        size="small"
+        readOnly
+      />
       <h3 className="text-lg font-semibold text-stone-950">{price}</h3>
     </div>
   </IconButton>
