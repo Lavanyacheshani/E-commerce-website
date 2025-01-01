@@ -38,7 +38,7 @@ const Category = () => {
             <div className="grid grid-cols-3 md:grid-cols-4 grid-rows-[auto] gap-5">
                 {categoryArr.map(({ imageUrl , title , categoryId }, index ) => (
    
-                    <CategoryItems key={index} imageUrl={imageUrl} title={title}
+                    <CategoryUnitItems key={index} imageUrl={imageUrl} title={title}
                     categoryId={categoryId}  />
                 ))}
             </div>
@@ -49,7 +49,7 @@ const Category = () => {
 
 export default Category;
 
-const CategoryItems = ({ imageUrl, title, categoryId }) => (
+const CategoryUnitItems = ({ imageUrl, title, categoryId }) => (
     
         <Link to={'/category/${categoryId}'}>
       <IconButton
