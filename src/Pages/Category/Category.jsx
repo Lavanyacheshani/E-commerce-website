@@ -49,7 +49,7 @@ const Category = () => {
 
 export default Category;
 
-const CategoryUnitItems = ({ imageUrl, title, categoryId }) => (
+const CategoryItems = ({ imageUrl, title, categoryId }) => (
     
         <Link to={'/category/${categoryId}'}>
       <IconButton

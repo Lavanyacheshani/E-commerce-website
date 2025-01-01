@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Header = () => {
     const[isSearch, setIsSearch] = useState(false)
     return (
-        <header className="fixed top-0 left-0 z-[100] w-full p-5 bg-my-background flex items-center justify-between drop-shadow-header-shadow ">
+        <header className="fixed top-0 left-0 z-[100] w-full p-2 bg-my-background flex items-center justify-between drop-shadow-header-shadow ">
             {/* Header left */}
             <div className="flex items-center ">
                 <IconButton>
