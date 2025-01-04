@@ -24,3 +24,5 @@ const categorySlice = createSlice({
     initialState,
     reducers:{}
 })
+
+export default categorySlice.reducer;
