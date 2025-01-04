@@ -20,9 +20,14 @@ const initialState = [
     
 ]
 const categorySlice = createSlice({
-    name:'categorySlice',
+    name: "categorySlice",
     initialState,
-    reducers:{}
-})
-
-export default categorySlice.reducer;
+    reducers: {},
+  });
+  
+  export const categorySelector = createSelector(
+    [(store) => store.category],
+    (category) => category
+  );
+  
+  export default categorySlice.reducer;
