@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
     {
@@ -20,12 +20,12 @@ const initialState = [
     
 ]
 const categorySlice = createSlice({
-    name: "categorySlice",
+    name:'categorySlice',
     initialState,
-    reducers: {},
-  });
-  
-  export const categorySelector = createSelector(
+    reducers:{}
+});
+
+export const categorySelector = createSelector(
     [(store) => store.category],
     (category) => category
   );
