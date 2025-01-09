@@ -22,7 +22,7 @@ const categoryArr = [
         imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5vUHZltp3HtZcoA3724cZuUkL0XOGDwLTg&s",
         title:"4",
         categoryId:"4",
-    },
+    }
 ];
 
 const Category = () => {
