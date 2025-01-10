@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 const Footer = () => {
-  const [whoIsClick, setWhoIsClick] = useState ({
+  const [whoIsClick, setWhoIsClick] = useState({
     Home: true,
     Category: false,
     Profile: false,
@@ -31,14 +31,13 @@ const Footer = () => {
           iconText="Profile"
         />
       </div>
-      
     </footer>
   );
 };
 
 export default Footer;
 
-const FooterIcon = ({Icon , iconText, clickFun})=> {
+const FooterIcon = ({ Icon, iconText, clickFun }) => {
   const clickHandle = () => {
     const obj = {
       Home: true,
@@ -60,11 +59,15 @@ const FooterIcon = ({Icon , iconText, clickFun})=> {
 
   return (
     <Link to={iconText === "Home" ? "/" : `/${String(iconText).toLowerCase()}`}>
-
-        <IconButton 
-          sx={{padding:'4px', paddingTop:'o' , borderRadius:'5px' , color:"white" }} 
-          onClick={clickHandle}
-        >
+      <IconButton
+        sx={{
+          padding: "4px",
+          paddingTop: "0",
+          borderRadius: "5px",
+          color: "red",
+        }}
+        onClick={clickHandle}
+      >
                   <div
           style={{
             color: clickFun.whoIsClick[iconText] && "#FFA500",
