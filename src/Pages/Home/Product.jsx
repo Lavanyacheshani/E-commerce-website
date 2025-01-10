@@ -99,7 +99,7 @@ const ProductUnit = ({ ImageUrl, price, productTitle }) => (
       <h3 className="text-sm font-semibold text-stone-950">{productTitle}</h3>
       <Rating
         name={ImageUrl}
-        value={3.5}
+        value={3}
         precision={0.1}
         size="small"
         readOnly

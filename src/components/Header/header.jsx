@@ -5,7 +5,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { IconButton } from '@mui/material';
 import { useState } from 'react';
 
-const Header = () => {
+let clicked = false;
+
+const Header = ({ paymentModalRef }) => {
     const[isSearch, setIsSearch] = useState(false)
     return (
         <header className="fixed top-0 left-0 z-[100] w-full p-2 bg-my-background flex items-center justify-between drop-shadow-header-shadow ">

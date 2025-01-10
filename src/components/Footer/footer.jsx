@@ -1,10 +1,9 @@
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import { IconButton } from '@mui/material';
-import AppsOutlinedIcon from '@mui/icons-material/AppsOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { IconButton } from "@mui/material";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
-
 
 const Footer = () => {
   const [whoIsClick, setWhoIsClick] = useState({
@@ -19,6 +18,7 @@ const Footer = () => {
         Icon={HomeOutlinedIcon}
         iconText="Home"
       />
+      <div className="flex-1 flex justify-center"></div>
       <FooterIcon
         clickFun={{ whoIsClick, setWhoIsClick }}
         Icon={AppsOutlinedIcon}
@@ -73,12 +73,10 @@ const FooterIcon = ({ Icon, iconText, clickFun }) => {
             color: clickFun.whoIsClick[iconText] && "#FFA500",
           }}
           className='text-white hover:text-orange-500 transition-all duration-300 '>
-<Icon/>
-<p className='text-xs font-semibold '>{iconText}</p>
-</div>
-
-  
-        </IconButton>
+          <Icon />
+          <p className=" text-xs font-semibold">{iconText}</p>
+        </div>
+      </IconButton>
     </Link>
   );
 };

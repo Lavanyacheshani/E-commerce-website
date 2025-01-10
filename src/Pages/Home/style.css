@@ -1,3 +1,13 @@
 .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: orange ;
 }
+
+/* Add this CSS */
+.MuiRating-iconFilled {
+    color: blue;
+  }
+  
+  .MuiRating-iconHover {
+    color: lightblue; /* Optional: Hover effect */
+  }
+  
